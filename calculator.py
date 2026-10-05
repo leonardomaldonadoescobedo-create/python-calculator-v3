@@ -1,5 +1,7 @@
 #---PYTHON-CALCULATOR-V3---
 
+import math
+
 def menu():
     
     print("=== PYTHON-CALCULATOR-V3 ===")
@@ -35,20 +37,46 @@ def menu2():
     
     print("========================")
 
-def sum(a , b):
+def addiction(a, b):
     return a + b
     
-def subtraction(a , b):
+def subtraction(a, b):
     return a - b
     
-def multiplication(a , b):
+def multiplication(a, b):
     return a * b
 
-def division(a , b):
+def division(a, b):
     try:
         return a / b
     except ZeroDivisionError:
         print("SYNTAX ERROR")
+        
+def percentage(a, b):
+    try:
+        return a * b / 100
+    except ZeroDivisionError:
+        print("SYNTAX ERROR")   
+        
+def power(a, b):
+    return a ** b
+    
+def modulo(a, b):
+    try:
+        return a % b
+    except ZeroDivisionError:
+        print("SYNTAX ERROR")
+        
+def square_root(a):
+    return math.sqrt(a)
+    
+def factorial(a):
+    counter = a = int(a)
+    
+    for i in range(1 , a):
+        counter *= i
+    
+    return counter
         
 while True:
     menu()
@@ -60,23 +88,40 @@ while True:
         if option == 0:
             break
         
-        a = int(input("Write a first number:"))
-        b = int(input("Write a second number:"))
+        a = float(input("Write a first number:"))
+        
+        if option == 8:
+            answer = square_root(a)
+            print("The answer is:" , answer)
+        elif option == 9:
+            answer = factorial(a)
+            print("The answer is" , answer)
+        else:
+             b = float(input("Write a second number:"))
         
         if option == 1:
-            answer = sum(a , b)
+            answer = sum(a, b)
             print("The answer is:" , answer)
         elif option == 2:
-            answer = subtraction(a , b)
+            answer = subtraction(a, b)
             print("The answer is:" , answer)
         elif option == 3:
-            answer = multiplication(a , b)
+            answer = multiplication(a, b)
             print("The answer is:" , answer)
         elif option == 4:
-            answer = division(a , b)
+            answer = division(a, b)
+            print("The answer is:" , answer)
+        elif option == 5:
+            answer = percentage(a, b)
+            print("The answer is:" , answer)
+        elif option == 6:
+            answer = power(a, b)
+            print("The answer is:" , answer)
+        elif option == 7:
+            answer = modulo(a, b)
             print("The answer is:" , answer)
         else:
-            print("This options is in process")
+            print("That option doesn´t exist")
         
     except ValueError:
         print("SYNTAX ERROR")
