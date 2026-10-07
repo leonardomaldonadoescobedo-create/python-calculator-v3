@@ -3,14 +3,6 @@
 A modular command-line calculator built with Python. Version 3.0 focuses on improving code organization, creating reusable functions, and expanding the calculator with new mathematical operations.
 
 ## Features
-## Current Progress
-
-- Modular menu divided into Basic and Other Operations
-- Menu options stored in lists
-- Menu generated using "for" loops
-- Separate functions created for basic arithmetic operations
-- Basic operations connected to the main program using "while True"
-- Input validation and error handling implemented for the basic operations
 
 ### Planned Operations
 
