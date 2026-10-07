@@ -73,7 +73,7 @@ def square_root(a):
 def factorial(a):
     counter = a = int(a)
     
-    for i in range(1 , a):
+    for i in range(1 , a + 1):
         counter *= i
     
     return counter
@@ -100,7 +100,7 @@ while True:
              b = float(input("Write a second number:"))
         
         if option == 1:
-            answer = sum(a, b)
+            answer = addiction(a, b)
             print("The answer is:" , answer)
         elif option == 2:
             answer = subtraction(a, b)
