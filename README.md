@@ -1,7 +1,8 @@
 # Python Calculator v3
 
-A modular command-line calculator built with Python. Version 3.0 focuses on improving code organization, creating reusable functions, and building a foundation for new mathematical operations.
+A modular command-line calculator built with Python. Version 3.0 focuses on improving code organization, creating reusable functions, and expanding the calculator with new mathematical operations.
 
+## Features
 ## Current Progress
 
 - Modular menu divided into Basic and Other Operations
@@ -11,7 +12,14 @@ A modular command-line calculator built with Python. Version 3.0 focuses on impr
 - Basic operations connected to the main program using "while True"
 - Input validation and error handling implemented for the basic operations
 
-## Planned Operations
+### Planned Operations
+
+- Addition
+- Subtraction
+- Multiplication
+- Division
+
+### Other Operations 
 
 - Percentage
 - Power
@@ -19,25 +27,24 @@ A modular command-line calculator built with Python. Version 3.0 focuses on impr
 - Square Root
 - Factorial
 
-## Completed Operations 
-
-- Addiction
-- Subtraction
-- Multiplication
-- Division
-
 ## Technologies
 
 - Python
+- math module
 
 ## What I Practiced in This Version 
 
-- Functions ("def"): Created separate functions for each basic arithmetic operation.
-- Lists: Stored menu options dynamically.
-- "for" loops: Used loops to display menu options.
-- "while True": Used a loop to control the main flow of the calculator.
-- Code Organization: Started restructuring the calculator into a more modular design.
-- Error Handling: Added basic input validation and handling for invalid operations.
+- Functions ("def")
+- Parameters and arguments
+- "return"
+- Lists
+- "for" loops
+- "while True"
+- "if", "elif", and "else"
+- "try/except"
+- Error handling
+- Python modules
+- Code organization
 
 ## Version History
 
@@ -48,7 +55,7 @@ First version of the calculator. Created as an initial learning project but not 
 First version published on GitHub with basic mathematical operations and percentage calculation.
 
 ### V3.0
-Current version in development. Focused on better code organization, reusable functions, and gradually adding new mathematical operations.
+Expanded the calculator into a modular command-line application with multiple functions, organized menus, error handling, and mathematical operations.
 
 ## About
 
